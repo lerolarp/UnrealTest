@@ -2,7 +2,7 @@
 
 
 #include "MyActor.h"
-//#include "Components/StaticMeshComponent.h"
+//
 
 // Sets default values
 AMyActor::AMyActor()
@@ -27,6 +27,10 @@ void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	
+	//카테고리, 로깅 수준, 형식, 인자
+	UE_LOG(LogTemp, Warning, TEXT("BeginPlay %d"), 3);
+
 }
 
 // Called every frame
@@ -34,5 +38,7 @@ void AMyActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//UE_LOG(LogTemp, Error, TEXT("Tick %f"), DeltaTime);
+	AddActorLocalRotation(FRotator(RotateSpeed * DeltaTime, 0.f, 0.f));
 }
 
