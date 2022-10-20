@@ -15,12 +15,12 @@ AMyPawn::AMyPawn()
 	Movement = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("MOVEMENT"));
 	RootComponent = Mesh;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> SM(TEXT("StaticMesh'/Game/StarterContent/Props/SM_Couch.SM_Couch'"));
-
-	if (SM.Succeeded())
-	{
-		Mesh->SetStaticMesh(SM.Object);
-	}
+	//static ConstructorHelpers::FObjectFinder<UStaticMesh> SM(TEXT("StaticMesh'/Game/StarterContent/Props/SM_Couch.SM_Couch'"));
+	//
+	//if (SM.Succeeded())
+	//{
+	//	Mesh->SetStaticMesh(SM.Object);
+	//}
 }
 
 // Called when the game starts or when spawned
