@@ -25,7 +25,8 @@ AMyCharacter::AMyCharacter()
 		FVector(0.f, 0.f, -88.f), FRotator(0.f, -90.f, 0.f));
 
 
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SM(TEXT("SkeletalMesh'/Game/ParagonGreystone/Characters/Heroes/Greystone/Meshes/Greystone.Greystone'"));
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> 
+		SM(TEXT("SkeletalMesh'/Game/ParagonGreystone/Characters/Heroes/Greystone/Meshes/Greystone.Greystone'"));
 
 	if (SM.Succeeded())
 	{
