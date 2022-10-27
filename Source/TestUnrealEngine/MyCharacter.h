@@ -48,4 +48,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 		class UMyAnimInstance* AnimInstance;
+
+	UPROPERTY()
+		int32 AttackIndex = 0;
 };
